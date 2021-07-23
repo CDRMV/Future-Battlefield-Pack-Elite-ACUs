@@ -1,0 +1,340 @@
+UnitBlueprint {
+    AI = {
+        TargetBones = {
+            'UEB0305',
+        },
+    },
+    Audio = {
+        Construct = Sound {
+            Bank = 'XSB',
+            Cue = 'XSB0302_Construct_Start',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        ConstructLoop = Sound {
+            Bank = 'XSB',
+            Cue = 'XSB0302_Construct_Loop',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        DeathExplosion = Sound {
+            Bank = 'XSL_Destroy',
+            Cue = 'XSB_Destroy_Lrg_PreDestroy',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        Destroyed = Sound {
+            Bank = 'XSL_Destroy',
+            Cue = 'XSB_Destroy_Huge',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        DoneBeingBuilt = Sound {
+            Bank = 'XSB',
+            Cue = 'XSB0302_Activate',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+        UISelection = Sound {
+            Bank = 'SeraphimSelect',
+            Cue = 'Seraphim_Select_Factory',
+            LodCutoff = 'UnitMove_LodCutoff',
+        },
+    },
+    BuildIconSortPriority = 40,
+    Categories = {
+        'PRODUCTFA',
+        'SELECTABLE',
+        'BUILTBYTIER3ENGINEER',
+        'UEF',
+        'STRUCTURE',
+        'LAND',
+        'TECH3',
+		'CONSTRUCTION',
+        'FACTORY',
+        'RALLYPOINT',
+        'DRAGBUILD',
+        'SIZE16',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SHOWQUEUE',
+		'CONSTRUCTIONSORTDOWN',
+        'SORTCONSTRUCTION',
+    },
+    CollisionOffsetY = 0,
+    Defense = {
+        AirThreatLevel = 0,
+        ArmorType = 'Structure',
+        EconomyThreatLevel = 34,
+        Health = 21000,
+        MaxHealth = 21000,
+        RegenRate = 0,
+        SubThreatLevel = 0,
+        SurfaceThreatLevel = 0,
+    },
+    Description = 'ACU-Headquarters',
+    Display = {
+        BuildAttachBone = 'Attachpoint',
+		AnimationFinishBuildLand = '/mods/Future Battlefield Pack Elite ACUs FAF Edition/units/ueb0305/ueb0305_aplatform.sca',
+        Mesh = {
+            IconFadeInZoom = 130,
+            LODs = {
+                {
+                    LODCutoff = 500,
+                    Scrolling = true,
+                    ShaderName = 'Unit',
+                },
+            },
+        },
+        Tarmacs = {
+            {
+                Albedo = 'Tarmacs/Tar12x_01_albedo',
+                DeathLifetime = 300,
+                FadeOut = 150,
+                Length = 17.8,
+                Normal = 'Tarmacs/Tar12x_01_normals',
+                Orientations = {
+                    0,
+                    90,
+                    180,
+                    270,
+                },
+                RemoveWhenDead = false,
+                Width = 16.8,
+            },
+        },
+        UniformScale = 0.24,
+    },
+    Economy = {
+        BuildCostEnergy = 105000,
+        BuildCostMass = 3150,
+        BuildRate = 50,
+        BuildTime = 8400,
+		InitialRallyX = 0,
+        InitialRallyZ = 8,
+        BuildableCategory = {
+            'BUILTBYACUHQ UEF',
+        },
+        RebuildBonusIds = {
+            'UEB0305',
+        },
+    },
+    Footprint = {
+        SizeX = 10,
+        SizeZ = 10,
+    },
+    General = {
+        BuildBones = {
+            BuildEffectBones = {
+                'Build1',
+				'Build2',
+            },
+        },
+        Category = 'Factory',
+        Classification = 'RULEUC_Factory',
+        CommandCaps = {
+            RULEUCC_Attack = false,
+            RULEUCC_CallTransport = false,
+            RULEUCC_Capture = false,
+            RULEUCC_Guard = true,
+            RULEUCC_Move = true,
+            RULEUCC_Nuke = false,
+            RULEUCC_Patrol = true,
+            RULEUCC_Pause = true,
+            RULEUCC_Reclaim = false,
+            RULEUCC_Repair = false,
+            RULEUCC_RetaliateToggle = true,
+            RULEUCC_Stop = true,
+            RULEUCC_Transport = false,
+        },
+        ConstructionBar = true,
+        FactionName = 'UEF',
+        Icon = 'land',
+        SelectionPriority = 5,
+        TechLevel = 'RULEUTL_Secret',
+        UnitName = 'Command Hangar',
+        UnitWeight = 1,
+    },
+    Intel = {
+        VisionRadius = 20,
+    },
+    Interface = {
+        HelpText = '<LOC Unit_Description_UEB0305>ACU-Headquarters',
+    },
+    LifeBarHeight = 0.075,
+    LifeBarOffset = 2.1,
+    LifeBarSize = 4.5,
+    Physics = {
+        BankingSlope = 0,
+        BuildOnLayerCaps = {
+            LAYER_Air = false,
+            LAYER_Land = true,
+            LAYER_Orbit = false,
+            LAYER_Seabed = false,
+            LAYER_Sub = false,
+            LAYER_Water = false,
+        },
+        DragCoefficient = 0.2,
+        FlattenSkirt = true,
+        MaxSteerForce = 0,
+        MeshExtentsX = 8.5,
+        MeshExtentsY = 6.35,
+        MeshExtentsZ = 8.5,
+        MinSpeedPercent = 0,
+        MotionType = 'RULEUMT_None',
+		RaisedPlatforms = {
+
+            # Platform 1
+            # TopLeft Offset From Center
+            -4,
+
+            # x
+            -7.6,
+
+            # z
+            0.5,
+
+            # height
+            # TopRight Offset From Center
+            4,
+
+            # x
+            -7.6,
+
+            # z
+            0.5,
+
+            # height
+            # BottomLeft Offset From Center
+            -4,
+
+            # x
+            3.9,
+
+            # z
+            0.5,
+
+            # height
+            # BottomRight Offset From Center
+            4,
+
+            # x
+            7.9,
+
+            # z
+            0.5,
+
+            # height
+            # Platform 2
+            # TopLeft Offset From Center
+            -4,
+
+            # x
+            -7.6,
+
+            # z
+            0,
+
+            # height
+            # TopRight Offset From Center
+            -4,
+
+            # x
+            -7.6,
+
+            # z
+            0.5,
+
+            # height
+            # BottomLeft Offset From Center
+            -4,
+
+            # x
+            7.9,
+
+            # z
+            0,
+
+            # height
+            # BottomRight Offset From Center
+            -4.1,
+
+            # x
+            7.9,
+
+            # z
+            0.5,
+
+            # height
+            # Platform 3
+            # TopLeft Offset From Center
+            1.1,
+
+            # x
+            -7.6,
+
+            # z
+            0.5,
+
+            # height
+            # TopRight Offset From Center
+            4,
+
+            # x
+            -3.6,
+
+            # z
+            0,
+
+            # height
+            # BottomLeft Offset From Center
+            1.1,
+
+            # x
+            7.9,
+
+            # z
+            0.5,
+
+            # height
+            # BottomRight Offset From Center
+            4,
+
+            # x
+            7.9,
+
+            # z
+            0,
+        },
+        RollOffPoints = {
+            {
+                UnitSpin = 0,
+                X = 0,
+                Y = 0,
+                Z = 8,
+            },
+        },
+        SkirtOffsetX = 0,
+        SkirtOffsetZ = 0,
+        SkirtSizeX = 10,
+        SkirtSizeZ = 10,
+        TurnRate = 0,
+    },
+    SelectionSizeX = 2.8,
+    SelectionSizeZ = 2.8,
+    SelectionThickness = 0.38,
+    SizeX = 2.2,
+    SizeY = 1.3,
+    SizeZ = 2.2,
+    StrategicIconName = 'icon_structure3_transport',
+    StrategicIconSortPriority = 210,
+    Wreckage = {
+        Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
+        EnergyMult = 0,
+        HealthMult = 0.9,
+        MassMult = 0.9,
+        ReclaimTimeMultiplier = 1,
+        WreckageLayers = {
+            Air = false,
+            Land = true,
+            Seabed = false,
+            Sub = false,
+            Water = false,
+        },
+    },
+}
