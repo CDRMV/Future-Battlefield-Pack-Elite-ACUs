@@ -25,7 +25,7 @@ local MyUnitIdTable = {
 	XNL0001b=true, -- Nomads ACU
 }
 
-	local IconPath = "/mods/Future Battlefield Pack Elite ACUs FAF Edition"
+	local IconPath = "/mods/Future Battlefield Pack Elite ACUs"
 	-- Adds icons to the unitselectionwindow
 	local oldGetUnitIconFileNames = GetUnitIconFileNames
 	function GetUnitIconFileNames(blueprint)

@@ -28,7 +28,7 @@ local MyUnitIdTable = {
 	XNL0001b=true, -- Nomads ACU
 }
 
-	local IconPath = "/mods/Future Battlefield Pack Elite ACUs FAF Edition"
+	local IconPath = "/mods/Future Battlefield Pack Elite ACUs"
 	-- Adds icons to the engeneer/factory buildmenu
 	local oldUIFile = UIFile
 	function UIFile(filespec)
